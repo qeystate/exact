@@ -1,9 +1,9 @@
-require "exact/version"
-require "active_support/inflector"
-require "exact/configuration"
+require 'exact/version'
+require 'active_support/inflector'
+require 'exact/configuration'
 
 module Exact
-  autoload :Client,         'exact/client'
+  autoload :Client, 'exact/client'
 
   # Models
   autoload :Account,                 'exact/models/account'

@@ -1,5 +1,5 @@
-require "virtus"
-require "active_model"
+require 'virtus'
+require 'active_model'
 
 module Exact
   class Base
@@ -10,7 +10,7 @@ module Exact
     end
 
     def self.exact_guid_attribute
-      Object.const_get("#{self.name}::EXACT_GUID")
+      Object.const_get("#{name}::EXACT_GUID")
     end
 
     def exact_guid_attribute
@@ -18,7 +18,7 @@ module Exact
     end
 
     def self.exact_service
-      Object.const_get("#{self.to_s}::EXACT_SERVICE")
+      Object.const_get("#{self}::EXACT_SERVICE")
     end
 
     def exact_service
@@ -26,7 +26,7 @@ module Exact
     end
 
     def self.exact_endpoint
-      self.to_s.demodulize.pluralize.camelize
+      to_s.demodulize.pluralize.camelize
     end
 
     def exact_endpoint
@@ -34,7 +34,7 @@ module Exact
     end
 
     def self.create_client(access_token:, division:)
-      Exact::Client.new(access_token: access_token, division: division, service: self.exact_service, endpoint: self.exact_endpoint)
+      Exact::Client.new(access_token: access_token, division: division, service: exact_service, endpoint: exact_endpoint)
     end
 
     def create_client(access_token:, division:)
@@ -42,43 +42,43 @@ module Exact
     end
 
     def self.all(client:)
-      client.send(self.to_s.demodulize.pluralize)
+      client.send(to_s.demodulize.pluralize)
       result = client.execute
-      result.map!{ |obj| Exact.const_get("#{self.to_s.demodulize}Mapping").convert obj }
+      result.map! { |obj| Exact.const_get("#{to_s.demodulize}Mapping").convert obj }
     end
 
     def self.create(attributes: {}, client:)
-      exact_obj = Exactonline.const_get(self.to_s.demodulize).new(attributes)
-      client.send("AddTo#{self.to_s.demodulize.pluralize}", exact_obj)
+      exact_obj = Exactonline.const_get(to_s.demodulize).new(attributes)
+      client.send("AddTo#{to_s.demodulize.pluralize}", exact_obj)
       result = client.save_changes
-      result.map!{ |obj| Exact.const_get("#{self.to_s.demodulize}Mapping").convert obj }
+      result.map! { |obj| Exact.const_get("#{to_s.demodulize}Mapping").convert obj }
       result.first
     end
 
     def self.find(id:, client:)
-      client.send(self.exact_endpoint).filter("#{self.exact_guid_attribute} eq guid'#{id}'")
+      client.send(exact_endpoint).filter("#{exact_guid_attribute} eq guid'#{id}'")
       result = client.execute
-      result.map!{ |obj| Exact.const_get("#{self.to_s.demodulize}Mapping").convert obj }
+      result.map! { |obj| Exact.const_get("#{to_s.demodulize}Mapping").convert obj }
       result.first
     end
 
     def self.find_by(field:, value:, guid: false, client:)
       query = "#{field.capitalize} eq "
-      query << "guid" if guid
+      query << 'guid' if guid
       query << "'#{value}'"
-      client.send(self.exact_endpoint).filter(query)
+      client.send(exact_endpoint).filter(query)
       result = client.execute
-      result.map!{ |obj| Exact.const_get("#{self.to_s.demodulize}Mapping").convert obj }
+      result.map! { |obj| Exact.const_get("#{to_s.demodulize}Mapping").convert obj }
       result.first
     end
 
     def self.update(id:, attributes: {}, client:)
-      client.send(self.exact_endpoint).filter("#{self.exact_guid_attribute} eq guid'#{id}'")
+      client.send(exact_endpoint).filter("#{exact_guid_attribute} eq guid'#{id}'")
       result = client.execute
       return false unless result.any?
       exact_obj = result.first
       attributes.each do |attribute, value|
-        exact_obj.send("#{attribute.to_s}=", value) if exact_obj.respond_to? (attribute)
+        exact_obj.send("#{attribute}=", value) if exact_obj.respond_to? (attribute)
       end
       client.update_object(exact_obj)
       result = client.save_changes
@@ -86,12 +86,12 @@ module Exact
     end
 
     def update(client:)
-      client.send(self.exact_endpoint).filter("#{self.exact_guid_attribute} eq guid'#{guid}'")
+      client.send(exact_endpoint).filter("#{exact_guid_attribute} eq guid'#{guid}'")
       result = client.execute
       return false unless result.any?
       exact_obj = result.first
-      self.attributes.each do |attribute, value|
-        exact_obj.send("#{attribute.to_s}=", value) if exact_obj.respond_to? (attribute)
+      attributes.each do |attribute, value|
+        exact_obj.send("#{attribute}=", value) if exact_obj.respond_to? (attribute)
       end
       client.update_object(exact_obj)
       result = client.save_changes
@@ -102,14 +102,14 @@ module Exact
       if guid.present?
         update(client: client)
       else
-        result = self.class.create(attributes: self.attributes, client: client) unless guid.present?
+        result = self.class.create(attributes: attributes, client: client) unless guid.present?
         self.attributes = result.attributes
         self
       end
     end
 
     def self.destroy(id: nil, client:)
-      client.send(self.exact_endpoint).filter("#{self.exact_guid_attribute} eq guid'#{id}'")
+      client.send(exact_endpoint).filter("#{exact_guid_attribute} eq guid'#{id}'")
       result = client.execute
       return false unless result.any?
       client.delete_object(result.first)

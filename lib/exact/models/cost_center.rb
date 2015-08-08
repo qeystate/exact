@@ -9,14 +9,13 @@ module Exact
     attribute :Active,           Boolean
     attribute :Code,             String
     attribute :Created,          DateTime
-    attribute :Creator,          String #guid
+    attribute :Creator,          String # guid
     attribute :CreatorFullName,  String
     attribute :Description,      String
-    attribute :Division,         Integer #HID/division
-    attribute :ID,               String #guid
+    attribute :Division,         Integer # HID/division
+    attribute :ID,               String # guid
     attribute :Modified,         DateTime
-    attribute :Modifier,         String #guid/user
+    attribute :Modifier,         String # guid/user
     attribute :ModifierFullName, String
   end
 end
-
