@@ -38,8 +38,8 @@ module Exact
     end
 
     def setup_client(access_token: nil, division: nil, reload: false)
-      return @client if defined? @client and !reload
-      return @client = self.class.create_client(access_token: access_token, division: division) if !defined? @client or reload
+      return @client if defined? @client && !reload
+      return @client = self.class.create_client(access_token: access_token, division: division) if !defined? @client || reload
       self
     end
 
@@ -80,10 +80,10 @@ module Exact
       return false unless result.any?
       exact_obj = result.first
       attributes.each do |attribute, value|
-        exact_obj.send("#{attribute}=", value) if exact_obj.respond_to? (attribute)
+        exact_obj.send("#{attribute}=", value) if exact_obj.respond_to? attribute
       end
       client.update_object(exact_obj)
-      result = client.save_changes
+      client.save_changes
       true
     end
 
@@ -93,10 +93,10 @@ module Exact
       return false unless result.any?
       exact_obj = result.first
       attributes.each do |attribute, value|
-        exact_obj.send("#{attribute}=", value) if exact_obj.respond_to? (attribute)
+        exact_obj.send("#{attribute}=", value) if exact_obj.respond_to? attribute
       end
       client.update_object(exact_obj)
-      result = client.save_changes
+      client.save_changes
       true
     end
 
@@ -115,7 +115,7 @@ module Exact
       result = client.execute
       return false unless result.any?
       client.delete_object(result.first)
-      result = client.save_changes
+      client.save_changes
       true
     rescue OData::ServiceError => e
       errors.add(:base, e.message)
@@ -127,7 +127,7 @@ module Exact
       result = client.execute
       return false unless result.any?
       client.delete_object(result.first)
-      result = client.save_changes
+      client.save_changes
       true
     rescue OData::ServiceError => e
       errors.add(:base, e.message)
