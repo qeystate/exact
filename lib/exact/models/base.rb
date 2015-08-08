@@ -37,8 +37,10 @@ module Exact
       Exact::Client.new(access_token: access_token, division: division, service: exact_service, endpoint: exact_endpoint)
     end
 
-    def create_client(access_token:, division:)
-      @client ||= self.class.create_client(access_token: access_token, division: division)
+    def setup_client(access_token: nil, division: nil, reload: false)
+      return @client if defined? @client and !reload
+      return @client = self.class.create_client(access_token: access_token, division: division) if !defined? @client or reload
+      self
     end
 
     def self.all(client:)

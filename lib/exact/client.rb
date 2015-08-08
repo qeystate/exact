@@ -14,7 +14,7 @@ module Exact
       @exact_client = OData::Service.new(@exact_url, access_token: access_token, namespace: 'Exactonline')
       @exact_client.send(endpoint)
     end
-    j
+
     def method_missing(mthd, *args, &block)
       exact_client.send(mthd, *args, &block) if exact_client.respond_to? mthd.to_s
     end
