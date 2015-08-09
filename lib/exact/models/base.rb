@@ -26,7 +26,9 @@ module Exact
     end
 
     def self.exact_endpoint
-      to_s.demodulize.pluralize.camelize
+      name = Object.const_get("#{self}::EXACT_ENDPOINT") rescue nil
+      name = to_s.demodulize.pluralize.camelize unless name
+      name
     end
 
     def exact_endpoint
@@ -50,8 +52,8 @@ module Exact
     end
 
     def self.create(attributes: {}, client:)
-      exact_obj = Exactonline.const_get(to_s.demodulize).new(attributes)
-      client.send("AddTo#{to_s.demodulize.pluralize}", exact_obj)
+      exact_obj = Exactonline.const_get(exact_endpoint.singularize).new(attributes)
+      client.send("AddTo#{exact_endpoint}", exact_obj)
       result = client.save_changes
       result.map! { |obj| Exact.const_get("#{to_s.demodulize}Mapping").convert obj }
       result.first
