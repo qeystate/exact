@@ -38,8 +38,8 @@ module Exact
     end
 
     def setup_client(access_token: nil, division: nil, reload: false)
-      return @client if defined? @client && !reload
-      return @client = self.class.create_client(access_token: access_token, division: division) if !defined? @client || reload
+      return @client if @client.present? && !reload
+      return @client = self.class.create_client(access_token: access_token, division: division) if @client.nil? || reload
       self
     end
 
