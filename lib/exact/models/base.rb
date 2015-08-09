@@ -88,6 +88,7 @@ module Exact
     end
 
     def update(client:)
+      return false if guid.blank?
       client.send(exact_endpoint).filter("#{exact_guid_attribute} eq guid'#{guid}'")
       result = client.execute
       return false unless result.any?
@@ -101,11 +102,10 @@ module Exact
     end
 
     def save(client:)
-      if guid.present?
+      if !guid.blank?
         update(client: client)
       else
-        result = self.class.create(attributes: attributes, client: client) unless guid.present?
-        self.attributes = result.attributes
+        self.attributes = self.class.create(attributes: attributes, client: client).attributes
         self
       end
     end
