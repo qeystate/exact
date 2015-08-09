@@ -22,11 +22,11 @@ module Exact
     attribute :Format,                String
     attribute :IBAN,                  String
     attribute :ID,                    String
-    attribute :Main,                  Boolean
+    attribute :Main,                  Boolean, default: true
     attribute :Modified,              DateTime
     attribute :Modifier,              String
     attribute :ModifierFullName,      String
-    attribute :Type,                  String
-    attribute :TypeDescription,       String
+    attribute :Type,                  String, default: 'A'
+    attribute :TypeDescription,       String, default: 'Account'
   end
 end
