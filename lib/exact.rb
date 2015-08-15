@@ -16,6 +16,7 @@ module Exact
   autoload :Project,                 'exact/models/project'
   autoload :SalesInvoice,            'exact/models/sales_invoice'
   autoload :SalesInvoiceLine,        'exact/models/sales_invoice_line'
+  autoload :VATCode,                 'exact/models/vat_code'
 
   # Mappings
   autoload :AccountMapping,          'exact/mappings/account_mapping'
@@ -28,6 +29,7 @@ module Exact
   autoload :ProjectMapping,          'exact/mappings/project_mapping'
   autoload :SalesInvoiceMapping,     'exact/mappings/sales_invoice_mapping'
   autoload :SalesInvoiceLineMapping, 'exact/mappings/sales_invoice_line_mapping'
+  autoload :VATCodeMapping,          'exact/mappings/vat_code_mapping'
 
   Error = Class.new(StandardError)
 end
