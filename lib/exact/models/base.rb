@@ -5,6 +5,8 @@ module Exact
   class Base
     attr_accessor :client
 
+    alias read_attribute_for_serialization send
+
     def guid
       send(self.class.exact_guid_attribute)
     end
