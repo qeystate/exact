@@ -33,7 +33,7 @@ module Exact
   autoload :SalesInvoiceMapping,     'exact/mappings/sales_invoice_mapping'
   autoload :SalesInvoiceLineMapping, 'exact/mappings/sales_invoice_line_mapping'
   autoload :VATCodeMapping,          'exact/mappings/vat_code_mapping'
-  autoload :Division,                'exact/mappings/division_mapping'
+  autoload :DivisionMapping,         'exact/mappings/division_mapping'
 
   Error = Class.new(StandardError)
 end
