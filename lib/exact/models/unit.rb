@@ -1,5 +1,5 @@
 module Exact
-  class ExactUnit < Base
+  class Unit < Base
     include ActiveModel::Model
     include Virtus.model
 
