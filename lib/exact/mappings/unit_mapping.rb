@@ -1,4 +1,4 @@
 module Exact
-  class UnitMapping < BaseMapping
+  class ExactUnitMapping < BaseMapping
   end
 end
