@@ -19,6 +19,7 @@ module Exact
   autoload :SalesInvoiceLine,        'exact/models/sales_invoice_line'
   autoload :VATCode,                 'exact/models/vat_code'
   autoload :Division,                'exact/models/division'
+  autoload :Unit,                    'exact/models/unit'
 
   # Mappings
   autoload :AccountMapping,          'exact/mappings/account_mapping'
@@ -34,6 +35,7 @@ module Exact
   autoload :SalesInvoiceLineMapping, 'exact/mappings/sales_invoice_line_mapping'
   autoload :VATCodeMapping,          'exact/mappings/vat_code_mapping'
   autoload :DivisionMapping,         'exact/mappings/division_mapping'
+  autoload :UnitMapping,             'exact/mappings/unit_mapping'
 
   Error = Class.new(StandardError)
 end
