@@ -17,7 +17,7 @@ module Exact
     attribute :Description,                           String
     attribute :DiscountCalculation,                   String
     attribute :DiscountPaymentDays,                   Integer
-    attribute :DiscountPercentage,                    Double
+    attribute :DiscountPercentage,                    Integer
     attribute :Division,                              Integer
     attribute :Modified,                              DateTime
     attribute :Modifier,                              String
@@ -26,7 +26,7 @@ module Exact
     attribute :PaymentDiscountType,                   String
     attribute :PaymentEndOfMonths,                    Integer
     attribute :PaymentMethod,                         String
-    attribute :Percentage,                            Double
+    attribute :Percentage,                            Integer
     attribute :VATCalculation,                        String
   end
 end
