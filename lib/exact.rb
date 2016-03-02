@@ -20,6 +20,7 @@ module Exact
   autoload :VATCode,                 'exact/models/vat_code'
   autoload :Division,                'exact/models/division'
   autoload :Unit,                    'exact/models/unit'
+  autoload :PaymentCondition,        'exact/models/payment_condition'
 
   # Mappings
   autoload :AccountMapping,          'exact/mappings/account_mapping'
@@ -36,6 +37,7 @@ module Exact
   autoload :VATCodeMapping,          'exact/mappings/vat_code_mapping'
   autoload :DivisionMapping,         'exact/mappings/division_mapping'
   autoload :UnitMapping,             'exact/mappings/unit_mapping'
+  autoload :PaymentConditionMapping, 'exact/mappings/payment_condition_mapping'
 
   Error = Class.new(StandardError)
 end
