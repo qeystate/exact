@@ -15,6 +15,8 @@ module Exact
     attribute :CreatorFullName,     String
     attribute :Currency,            String
     attribute :CurrencyDescription, String
+    attribute :CustomerCode,        String
+    attribute :CustomerName,        String
     attribute :Customer,            String
     attribute :Description,         String
     attribute :HID,                 Integer
