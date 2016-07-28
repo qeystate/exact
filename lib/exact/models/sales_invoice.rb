@@ -18,6 +18,7 @@ module Exact
     attribute :DocumentNumber,                       Integer
     attribute :DocumentSubject,                      String
     attribute :DueDate,                              DateTime
+    attribute :ExtraDutyAmountFC,                    String
     attribute :InvoiceDate,                          DateTime
     attribute :InvoiceID,                            String
     attribute :InvoiceTo,                            String
