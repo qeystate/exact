@@ -10,8 +10,9 @@ module Exact
       @division     = division
       @service      = service
       @endpoint     = endpoint
+      @rest_options = { token_type: 'bearer' }
       @exact_url    = "#{Exact.configuration.exact_url}/#{division}/#{service}"
-      @exact_client = OData::Service.new(@exact_url, access_token: access_token, namespace: 'Exactonline')
+      @exact_client = OData::Service.new(@exact_url, access_token: access_token, namespace: 'Exactonline', rest_options: @rest_options)
       @exact_client.send(endpoint)
     end
 
