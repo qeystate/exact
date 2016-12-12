@@ -92,7 +92,6 @@ module Exact
     attribute :Unit,                    String
     attribute :UnitDescription,         String
     attribute :NetWeight,               String
-    attribute :NetWeightUnit,           String
     attribute :Barcode,                 String
     attribute :GrossWeight,             String
     attribute :IsTaxableItem,           String
