@@ -91,5 +91,15 @@ module Exact
     attribute :StartDate,               DateTime
     attribute :Unit,                    String
     attribute :UnitDescription,         String
+    attribute :NetWeight,               String
+    attribute :NetWeightUnit,           String
+    attribute :Barcode,                 String
+    attribute :GrossWeight,             String
+    attribute :IsTaxableItem,           String
+    attribute :PictureName,             String
+    attribute :PictureThumbnailUrl,     String
+    attribute :PictureUrl,              String
+    attribute :Stock,                   String
+    attribute :UnitType,                String
   end
 end
