@@ -48,6 +48,8 @@ module Exact
     attribute :CreditLineSales,                     String
     attribute :Currency,                            String
     attribute :CustomerSince,                       DateTime
+    attribute :DatevCreditorCode                    String
+    attribute :DatevDebtorCode                      String
     attribute :DiscountPurchase,                    String
     attribute :DiscountSales,                       String
     attribute :Division,                            String
@@ -55,12 +57,15 @@ module Exact
     attribute :DunsNumber,                          String
     attribute :Email,                               String
     attribute :EndDate,                             DateTime
+    attribute :EstablishedDate                      DateTime
     attribute :Fax,                                 String
     attribute :GLAccountPurchase,                   String
     attribute :GLAccountSales,                      String
     attribute :GLAP,                                String
     attribute :GLAR,                                String
+    attribute :HasWithholdingTaxSales,              Boolean
     attribute :ID,                                  String
+    attribute :IgnoreDatevWarningMessage,           String
     attribute :IntraStatArea,                       String
     attribute :IntraStatDeliveryTerm,               String
     attribute :IntraStatSystem,                     String
@@ -75,6 +80,7 @@ module Exact
     attribute :IsAccountant,                        String
     attribute :IsAgency,                            String
     attribute :IsBank,                              String
+    attribute :IsExtraDuty,                         String
     attribute :IsCompetitor,                        String
     attribute :IsMailing,                           String
     attribute :IsMember,                            String
@@ -98,6 +104,7 @@ module Exact
     attribute :ModifierFullName,                    String
     attribute :Name,                                String
     attribute :Parent,                              String
+    attribute :PayAsYouEarn,                        String
     attribute :PaymentConditionPurchase,            String
     attribute :PaymentConditionPurchaseDescription, String
     attribute :PaymentConditionSales,               String
@@ -116,6 +123,7 @@ module Exact
     attribute :Reseller,                            String
     attribute :ResellerCode,                        String
     attribute :ResellerName,                        String
+    attribute :RSIN,                                String
     attribute :SalesCurrency,                       String
     attribute :SalesCurrencyDescription,            String
     attribute :SalesVATCode,                        String
@@ -134,7 +142,9 @@ module Exact
     attribute :SalesTaxSchedule,                    String
     attribute :SalesTaxScheduleCode,                String
     attribute :SalesTaxScheduleDescription,         String
+    attribute :TradeName                            String
     attribute :Type,                                String
+    attribute :UniqueTaxpayerReference,             String
     attribute :VATLiability,                        String
     attribute :VATNumber,                           String
     attribute :Website,                             String
