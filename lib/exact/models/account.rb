@@ -48,8 +48,8 @@ module Exact
     attribute :CreditLineSales,                     String
     attribute :Currency,                            String
     attribute :CustomerSince,                       DateTime
-    attribute :DatevCreditorCode                    String
-    attribute :DatevDebtorCode                      String
+    attribute :DatevCreditorCode,                   String
+    attribute :DatevDebtorCode,                     String
     attribute :DiscountPurchase,                    String
     attribute :DiscountSales,                       String
     attribute :Division,                            String
@@ -57,7 +57,7 @@ module Exact
     attribute :DunsNumber,                          String
     attribute :Email,                               String
     attribute :EndDate,                             DateTime
-    attribute :EstablishedDate                      DateTime
+    attribute :EstablishedDate,                     DateTime
     attribute :Fax,                                 String
     attribute :GLAccountPurchase,                   String
     attribute :GLAccountSales,                      String
@@ -142,7 +142,7 @@ module Exact
     attribute :SalesTaxSchedule,                    String
     attribute :SalesTaxScheduleCode,                String
     attribute :SalesTaxScheduleDescription,         String
-    attribute :TradeName                            String
+    attribute :TradeName,                           String
     attribute :Type,                                String
     attribute :UniqueTaxpayerReference,             String
     attribute :VATLiability,                        String
