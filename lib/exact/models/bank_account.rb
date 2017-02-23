@@ -26,6 +26,7 @@ module Exact
     attribute :Modified,              DateTime
     attribute :Modifier,              String
     attribute :ModifierFullName,      String
+    attribute :PaymentServiceAccount, String
     attribute :Type,                  String, default: 'A'
     attribute :TypeDescription,       String, default: 'Account'
   end

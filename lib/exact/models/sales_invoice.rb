@@ -21,6 +21,8 @@ module Exact
     attribute :DeliverTo,                            String
     attribute :DeliverToAddress,                     String
     attribute :DeliverToContactPerson,               String
+    attribute :DeliverToContactPersonFullName,       String
+    attribute :DeliverToName,                        String
     attribute :ExtraDutyAmountFC,                    String
     attribute :InvoiceDate,                          DateTime
     attribute :InvoiceID,                            String
@@ -29,6 +31,7 @@ module Exact
     attribute :InvoiceToContactPersonFullName,       String
     attribute :InvoiceToName,                        String
     attribute :InvoiceNumber,                        Integer
+    attribute :IsExtraDuty,                          Boolean
     attribute :Journal,                              String
     attribute :JournalDescription,                   String
     attribute :Modified,                             DateTime
@@ -46,6 +49,8 @@ module Exact
     attribute :Remarks,                              String
     attribute :Salesperson,                          String
     attribute :SalespersonFullName,                  String
+    attribute :StarterSalesInvoiceStatus,            String
+    attribute :StarterSalesInvoiceStatusDescription, String
     attribute :Status,                               String
     attribute :StatusDescription,                    String
     attribute :TaxSchedule,                          String
@@ -56,7 +61,5 @@ module Exact
     attribute :VATAmountFC,                          String
     attribute :VATAmountDC,                          String
     attribute :YourRef,                              String
-    attribute :StarterSalesInvoiceStatus,            String
-    attribute :StarterSalesInvoiceStatusDescription, String
   end
 end

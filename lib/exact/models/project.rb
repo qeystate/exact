@@ -8,8 +8,16 @@ module Exact
 
     attribute :Account,                   String
     attribute :AccountCode,               String
-    attribute :AccountName,               String
     attribute :AccountContact,            String
+    attribute :AccountName,               String
+    attribute :AllowAdditionalInvoicing,  Boolean
+    attribute :BlockEntry,                Boolean
+    attribute :BlockRebilling,            Boolean
+    attribute :BudgetedAmount,            String
+    attribute :BudgetedCosts,             String
+    attribute :BudgetedRevenue,           String
+    attribute :BudgetType,                Integer
+    attribute :BudgetTypeDescription,     String
     attribute :Classification,            String
     attribute :ClassificationDescription, String
     attribute :Code,                      String
@@ -24,25 +32,25 @@ module Exact
     attribute :EndDate,                   DateTime
     attribute :FixedPriceItem,            String
     attribute :FixedPriceItemDescription, String
+    attribute :InvoiceAsQuoted,           Boolean
     attribute :ID,                        String
     attribute :Manager,                   String
     attribute :ManagerFullname,           String
+    attribute :MarkupPercentage,          String
     attribute :Modified,                  DateTime
     attribute :Modifier,                  String
     attribute :ModifierFullName,          String
     attribute :Notes,                     String
+    attribute :PrepaidItem,               String
+    attribute :PrepaidItemDescription,    String
+    attribute :PrepaidType,               String
+    attribute :PrepaidTypeDescription,    String
     attribute :SalesTimeQuantity,         String
+    attribute :SourceQuotation,           String
     attribute :StartDate,                 DateTime
     attribute :TimeQuantityToAlert,       String
     attribute :Type,                      String
     attribute :TypeDescription,           String
-    attribute :BudgetedAmount,            String
-    attribute :PrepaidType,               String
-    attribute :PrepaidTypeDescription,    String
-    attribute :PrepaidItem,               String
-    attribute :PrepaidItemDescription,    String
-    attribute :MarkupPercentage,          String
-    attribute :BudgetedCosts,             String
-    attribute :BudgetedRevenue,           String
+    attribute :UseBillingMilestones,      Boolean
   end
 end

@@ -12,12 +12,15 @@ module Exact
     attribute :CostCenterDescription,   String
     attribute :CostUnit,                String
     attribute :CostUnitDescription,     String
+    attribute :DeliveryDate,            DateTime
     attribute :Description,             String
     attribute :Discount,                String
     attribute :Division,                Integer
     attribute :Employee,                String
     attribute :EmployeeFullName,        String
     attribute :EndTime,                 DateTime
+    attribute :ExtraDutyAmountFC,       String
+    attribute :ExtraDutyPercentage,     String
     attribute :GLAccount,               String
     attribute :GLAccountDescription,    String
     attribute :ID,                      String
@@ -33,6 +36,10 @@ module Exact
     attribute :Project,                 String
     attribute :ProjectDescription,      String
     attribute :Quantity,                String
+    attribute :SalesOrder,              String
+    attribute :SalesOrderLine,          String
+    attribute :SalesOrderLineNumber,    Integer
+    attribute :SalesOrderNumber,        Integer
     attribute :StartTime,               DateTime
     attribute :Subscription,            String
     attribute :SubscriptionDescription, String

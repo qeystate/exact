@@ -33,6 +33,7 @@ module Exact
     attribute :GLToPayDescription,            String
     attribute :ID,                            String
     attribute :IntraStat,                     Boolean
+    attribute :IntrastatType,                 String
     attribute :IsBlocked,                     Boolean
     attribute :LegalText,                     String
     attribute :Modified,                      DateTime
