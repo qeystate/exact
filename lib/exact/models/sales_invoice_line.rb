@@ -35,6 +35,8 @@ module Exact
     attribute :PricelistDescription,    String
     attribute :Project,                 String
     attribute :ProjectDescription,      String
+    attribute :ProjectWBS,              String
+    attribute :ProjectWBSDescription,   String
     attribute :Quantity,                String
     attribute :SalesOrder,              String
     attribute :SalesOrderLine,          String
