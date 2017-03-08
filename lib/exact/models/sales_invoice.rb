@@ -60,6 +60,8 @@ module Exact
     attribute :TypeDescription,                      String
     attribute :VATAmountFC,                          String
     attribute :VATAmountDC,                          String
+    attribute :WithholdingTaxAmountFC,               String
+    attribute :WithholdingTaxPercentage,             String
     attribute :YourRef,                              String
   end
 end
