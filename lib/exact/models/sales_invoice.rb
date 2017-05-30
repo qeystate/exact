@@ -24,6 +24,7 @@ module Exact
     attribute :DeliverToContactPersonFullName,       String
     attribute :DeliverToName,                        String
     attribute :ExtraDutyAmountFC,                    String
+    attribute :GAccountAmountFC,                     String
     attribute :InvoiceDate,                          DateTime
     attribute :InvoiceID,                            String
     attribute :InvoiceTo,                            String
