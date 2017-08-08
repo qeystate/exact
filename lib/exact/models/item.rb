@@ -13,6 +13,11 @@ module Exact
     attribute :Class_03,                String
     attribute :Class_04,                String
     attribute :Class_05,                String
+    attribute :Class_06,                String
+    attribute :Class_07,                String
+    attribute :Class_08,                String
+    attribute :Class_09,                String
+    attribute :Class_10,                String
     attribute :Code,                    String
     attribute :CopyRemarks,             String
     attribute :CostPriceCurrency,       String
