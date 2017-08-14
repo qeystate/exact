@@ -6,13 +6,17 @@ module Exact
     EXACT_SERVICE = 'salesinvoice'
     EXACT_GUID    = 'InvoiceID'
 
-    attribute :AmountFC,                             String
     attribute :AmountDC,                             String
+    attribute :AmountDiscount,                       String
+    attribute :AmountDiscountExclVat,                String
+    attribute :AmountFC,                             String
+    attribute :AmountFCExclVat,                      String
     attribute :Created,                              DateTime
     attribute :Creator,                              String
     attribute :CreatorFullName,                      String
     attribute :Currency,                             String
     attribute :Description,                          String
+    attribute :Discount,                             String
     attribute :Division,                             Integer
     attribute :Document,                             String
     attribute :DocumentNumber,                       Integer
