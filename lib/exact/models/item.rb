@@ -75,7 +75,6 @@ module Exact
     attribute :IsOnDemandItem,          String
     attribute :IsPackageItem,           String
     attribute :IsPurchaseItem,          String
-    attribute :IsRegistrationCodeItem,  String
     attribute :IsSalesItem,             String
     attribute :IsSerialItem,            String
     attribute :IsStockItem,             String
