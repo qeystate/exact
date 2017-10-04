@@ -6,8 +6,6 @@ module Exact
     EXACT_SERVICE = 'logistics'
     EXACT_GUID    = 'ID'
 
-    attribute :IsSerialNumberItem,      String
-    attribute :IsBatchNumberItem,       String
     attribute :Class_01,                String
     attribute :Class_02,                String
     attribute :Class_03,                String
