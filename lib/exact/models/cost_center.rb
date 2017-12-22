@@ -14,6 +14,7 @@ module Exact
     attribute :CreatorFullName,  String
     attribute :Description,      String
     attribute :Division,         Integer # HID/division
+    attribute :EndDate,          DateTime
     attribute :ID,               String # guid
     attribute :Modified,         DateTime
     attribute :Modifier,         String # guid/user

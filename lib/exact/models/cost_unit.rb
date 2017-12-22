@@ -13,6 +13,7 @@ module Exact
     attribute :CreatorFullName,  String
     attribute :Description,      String
     attribute :Division,         Integer
+    attribute :EndDate,          DateTime
     attribute :ID,               String
     attribute :Modified,         DateTime
     attribute :Modifier,         String
