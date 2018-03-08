@@ -16,6 +16,7 @@ module Exact
     attribute :BudgetedAmount,            String
     attribute :BudgetedCosts,             String
     attribute :BudgetedRevenue,           String
+    attribute :BudgetOverrunHours,        Integer
     attribute :BudgetType,                Integer
     attribute :BudgetTypeDescription,     String
     attribute :Classification,            String
@@ -32,6 +33,7 @@ module Exact
     attribute :EndDate,                   DateTime
     attribute :FixedPriceItem,            String
     attribute :FixedPriceItemDescription, String
+    attribute :InternalNotes,             String
     attribute :InvoiceAsQuoted,           Boolean
     attribute :ID,                        String
     attribute :Manager,                   String

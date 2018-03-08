@@ -103,6 +103,7 @@ module Exact
     attribute :Modifier,                            String
     attribute :ModifierFullName,                    String
     attribute :Name,                                String
+    attribute :OINNumber,                           String
     attribute :Parent,                              String
     attribute :PayAsYouEarn,                        String
     attribute :PaymentConditionPurchase,            String

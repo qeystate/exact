@@ -8,6 +8,11 @@ module Exact
 
     attribute :Code,                Integer
     attribute :BlockingStatus,      Integer
+    attribute :Class_01,            String
+    attribute :Class_02,            String
+    attribute :Class_03,            String
+    attribute :Class_04,            String
+    attribute :Class_05,            String
     attribute :Country,             String
     attribute :CountryDescription,  String
     attribute :Created,             DateTime
