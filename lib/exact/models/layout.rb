@@ -5,6 +5,7 @@ module Exact
 
     EXACT_SERVICE = 'salesinvoice'
     EXACT_GUID    = 'InvoiceID'
+    OBSOLETE_INSTANCE_VARIABLES = []
 
     attribute :ID,               String
     attribute :Created,          DateTime

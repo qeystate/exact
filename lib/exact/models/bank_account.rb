@@ -5,6 +5,10 @@ module Exact
 
     EXACT_SERVICE = 'crm'
     EXACT_GUID    = 'ID'
+    OBSOLETE_INSTANCE_VARIABLES = ['Bank', 
+                                    'BankDescription', 
+                                    'BankName', 
+                                    'IBAN']
 
     attribute :Account,               String
     attribute :AccountName,           String

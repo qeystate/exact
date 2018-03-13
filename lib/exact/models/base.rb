@@ -27,6 +27,14 @@ module Exact
       self.class.exact_service
     end
 
+    def self.obsolete_instance_variables
+      Object.const_get("#{self}::OBSOLETE_INSTANCE_VARIABLES")
+    end
+
+    def obsolete_instance_variables
+      self.class.obsolete_instance_variables
+    end
+
     def self.exact_endpoint
       name = Object.const_get("#{self}::EXACT_ENDPOINT") rescue nil
       name = to_s.demodulize.pluralize.camelize unless name
@@ -86,6 +94,9 @@ module Exact
       attributes.each do |attribute, value|
         exact_obj.send("#{attribute}=", value) if exact_obj.respond_to? attribute
       end
+
+      exact_obj = self.remove_obsolete_instance_variables exact_obj
+
       client.update_object(exact_obj)
       client.save_changes
       true
@@ -100,6 +111,9 @@ module Exact
       attributes.each do |attribute, value|
         exact_obj.send("#{attribute}=", value) if exact_obj.respond_to? attribute
       end
+
+      exact_obj = self.class.remove_obsolete_instance_variables exact_obj
+
       client.update_object(exact_obj)
       client.save_changes
       true
@@ -136,6 +150,13 @@ module Exact
     rescue OData::ServiceError => e
       errors.add(:base, e.message)
       false
+    end
+
+    def self.remove_obsolete_instance_variables exact_obj
+      obsolete_instance_variables.each do |obsolete_instance_variable_name|
+        exact_obj.remove_instance_variable "@#{obsolete_instance_variable_name}"
+      end
+      return exact_obj
     end
   end
 end

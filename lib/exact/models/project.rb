@@ -5,6 +5,7 @@ module Exact
 
     EXACT_SERVICE = 'project'
     EXACT_GUID    = 'ID'
+    OBSOLETE_INSTANCE_VARIABLES = []
 
     attribute :Account,                   String
     attribute :AccountCode,               String

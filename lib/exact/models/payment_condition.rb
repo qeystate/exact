@@ -5,6 +5,7 @@ module Exact
 
     EXACT_SERVICE = 'cashflow'
     EXACT_GUID    = 'ID'
+    OBSOLETE_INSTANCE_VARIABLES = []
 
     attribute :ID,                                    String
     attribute :Code,                                  String

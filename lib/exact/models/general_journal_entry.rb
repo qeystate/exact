@@ -5,6 +5,7 @@ module Exact
 
     EXACT_SERVICE = 'generaljournalentry'
     EXACT_GUID    = 'EntryID'
+    OBSOLETE_INSTANCE_VARIABLES = []
 
     attribute :EntryID,                        String
     attribute :Created,                        DateTime

@@ -5,6 +5,7 @@ module Exact
 
     EXACT_SERVICE = 'logistics'
     EXACT_GUID    = 'ID'
+    OBSOLETE_INSTANCE_VARIABLES = ['IsSerialNumberItem', 'IsBatchNumberItem']
 
     attribute :Class_01,                String
     attribute :Class_02,                String

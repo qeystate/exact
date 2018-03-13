@@ -5,6 +5,9 @@ module Exact
 
     EXACT_SERVICE = 'salesinvoice'
     EXACT_GUID    = 'InvoiceID'
+    OBSOLETE_INSTANCE_VARIABLES = ['TaxSchedule', 
+                                    'TaxScheduleCode', 
+                                    'TaxScheduleDescription']
 
     attribute :AmountDC,                             String
     attribute :AmountDiscount,                       String

@@ -6,6 +6,7 @@ module Exact
     EXACT_SERVICE  = 'hrm'
     EXACT_GUID     = 'ID'
     EXACT_ENDPOINT = 'Costcenters'
+    OBSOLETE_INSTANCE_VARIABLES = []
 
     attribute :Active,           Boolean
     attribute :Code,             String

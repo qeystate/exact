@@ -6,6 +6,7 @@ module Exact
     EXACT_SERVICE  = 'hrm'
     EXACT_GUID     = 'ID'
     EXACT_ENDPOINT = 'Costunits'
+    OBSOLETE_INSTANCE_VARIABLES = []
 
     attribute :Code,             String
     attribute :Created,          DateTime

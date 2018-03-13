@@ -5,6 +5,23 @@ module Exact
 
     EXACT_SERVICE = 'crm'
     EXACT_GUID    = 'ID'
+    OBSOLETE_INSTANCE_VARIABLES = ['BRIN', 
+                                    'Classification',
+                                    'ClassificationDescription',
+                                    'Costcenter',
+                                    'CostcenterDescription',
+                                    'CostPaid',
+                                    'Currency',
+                                    'CustomerSince',
+                                    'Document',
+                                    'DunsNumber',
+                                    'IsBank',
+                                    'IsMember',
+                                    'IsPurchase',
+                                    'SalesTaxSchedule',
+                                    'SalesTaxScheduleCode',
+                                    'SalesTaxScheduleDescription',
+                                    'StatusSince']
 
     attribute :Accountant,                          String
     attribute :AccountManager,                      String

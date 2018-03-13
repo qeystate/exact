@@ -5,6 +5,7 @@ module Exact
 
     EXACT_SERVICE = 'financial'
     EXACT_GUID    = 'ID'
+    OBSOLETE_INSTANCE_VARIABLES = []
 
     attribute :AssimilatedVATBox,              Integer
     attribute :BalanceSide,                    String

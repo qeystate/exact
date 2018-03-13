@@ -5,6 +5,7 @@ module Exact
 
     EXACT_SERVICE = 'vat'
     EXACT_GUID    = 'ID'
+    OBSOLETE_INSTANCE_VARIABLES = ['Country']
 
     attribute :Account,                       String
     attribute :AccountCode,                   String

@@ -5,6 +5,7 @@ module Exact
 
     EXACT_SERVICE = 'hrm'
     EXACT_GUID    = 'Code'
+    OBSOLETE_INSTANCE_VARIABLES = []
 
     attribute :Code,                Integer
     attribute :BlockingStatus,      Integer
