@@ -109,6 +109,7 @@ module Exact
     attribute :Language,                            String
     attribute :LanguageDescription,                 String
     attribute :Latitude,                            String
+    attribute :LeadPurpose,                         String
     attribute :LeadSource,                          String
     attribute :LogoFileName,                        String
     attribute :LogoThumbnailUrl,                    String
