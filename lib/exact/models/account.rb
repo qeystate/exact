@@ -96,6 +96,7 @@ module Exact
     attribute :InvoicingMethod,                     String
     attribute :IsAccountant,                        String
     attribute :IsAgency,                            String
+    attribute :IsAnonymised,                        String
     attribute :IsBank,                              String
     attribute :IsExtraDuty,                         String
     attribute :IsCompetitor,                        String

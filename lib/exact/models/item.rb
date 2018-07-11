@@ -68,6 +68,7 @@ module Exact
     attribute :GLStock,                 String
     attribute :ID,                      String
     attribute :IsBatchItem,             String
+    attribute :IsBatchNumberItem,       String
     attribute :IsFractionAllowedItem,   String
     attribute :IsMakeItem,              String
     attribute :IsNewContract,           String
@@ -76,6 +77,7 @@ module Exact
     attribute :IsPurchaseItem,          String
     attribute :IsSalesItem,             String
     attribute :IsSerialItem,            String
+    attribute :IsSerialNumberItem,      String
     attribute :IsStockItem,             String
     attribute :IsSubcontractedItem,     String
     attribute :IsTime,                  String
