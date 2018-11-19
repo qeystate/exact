@@ -80,6 +80,7 @@ module Exact
     attribute :GLAccountSales,                      String
     attribute :GLAP,                                String
     attribute :GLAR,                                String
+    attribute :GlnNumber,                           String
     attribute :HasWithholdingTaxSales,              Boolean
     attribute :ID,                                  String
     attribute :IgnoreDatevWarningMessage,           String
