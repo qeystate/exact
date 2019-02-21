@@ -77,7 +77,7 @@ module Exact
     end
 
     def self.find_by(field:, value:, guid: false, client:)
-      query = "#{field.capitalize} eq "
+      query = "#{field} eq "
       query << 'guid' if guid
       query << "'#{value}'"
       client.send(exact_endpoint).filter(query)
