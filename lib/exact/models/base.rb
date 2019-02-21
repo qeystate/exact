@@ -78,8 +78,11 @@ module Exact
 
     def self.find_by(field:, value:, guid: false, client:)
       query = "#{field} eq "
-      query << 'guid' if guid
-      query << "'#{value}'"
+      if guid
+        query << "guid'#{value}'"
+      else
+        query << "#{value}"
+      end
       client.send(exact_endpoint).filter(query)
       result = client.execute
       result.map! { |obj| Exact.const_get("#{to_s.demodulize}Mapping").convert obj }
