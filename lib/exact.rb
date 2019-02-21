@@ -23,6 +23,7 @@ module Exact
   autoload :PaymentCondition,        'exact/models/payment_condition'
   autoload :GeneralJournalEntry,     'exact/models/general_journal_entry'
   autoload :GeneralJournalEntryLine, 'exact/models/general_journal_entry_line'
+  autoload :Document,                'exact/models/document'
 
   # Mappings
   autoload :AccountMapping,                 'exact/mappings/account_mapping'
@@ -42,6 +43,7 @@ module Exact
   autoload :PaymentConditionMapping,        'exact/mappings/payment_condition_mapping'
   autoload :GeneralJournalEntryMapping,     'exact/mappings/general_journal_entry_mapping'
   autoload :GeneralJournalEntryLineMapping, 'exact/mappings/general_journal_entry_line_mapping'
+  autoload :Document,                       'exact/mappings/document_mapping'
 
   Error = Class.new(StandardError)
 end
