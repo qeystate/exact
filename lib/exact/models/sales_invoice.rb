@@ -20,16 +20,17 @@ module Exact
     attribute :Currency,                             String
     attribute :Description,                          String
     attribute :Discount,                             String
+    attribute :DiscountType,                         Integer
     attribute :Division,                             Integer
-    attribute :Document,                             String
-    attribute :DocumentNumber,                       Integer
-    attribute :DocumentSubject,                      String
-    attribute :DueDate,                              DateTime
     attribute :DeliverTo,                            String
     attribute :DeliverToAddress,                     String
     attribute :DeliverToContactPerson,               String
     attribute :DeliverToContactPersonFullName,       String
     attribute :DeliverToName,                        String
+    attribute :Document,                             String
+    attribute :DocumentNumber,                       Integer
+    attribute :DocumentSubject,                      String
+    attribute :DueDate,                              DateTime
     attribute :ExtraDutyAmountFC,                    String
     attribute :GAccountAmountFC,                     String
     attribute :InvoiceDate,                          DateTime
@@ -68,6 +69,7 @@ module Exact
     attribute :TypeDescription,                      String
     attribute :VATAmountFC,                          String
     attribute :VATAmountDC,                          String
+    attribute :Warehouse,                            String
     attribute :WithholdingTaxAmountFC,               String
     attribute :WithholdingTaxBaseAmount,             String
     attribute :WithholdingTaxPercentage,             String

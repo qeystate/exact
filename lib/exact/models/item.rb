@@ -7,6 +7,7 @@ module Exact
     EXACT_GUID    = 'ID'
     OBSOLETE_INSTANCE_VARIABLES = ['IsSerialNumberItem', 'IsBatchNumberItem']
 
+    attribute :AverageCost,             String
     attribute :Class_01,                String
     attribute :Class_02,                String
     attribute :Class_03,                String
