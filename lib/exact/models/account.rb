@@ -34,6 +34,7 @@ module Exact
     attribute :AddressLine3,                        String
     attribute :Blocked,                             String
     attribute :BRIN,                                String
+    attribute :BSN,                                 String
     attribute :BusinessType,                        String
     attribute :CanDropShip,                         String
     attribute :ChamberOfCommerce,                   String
