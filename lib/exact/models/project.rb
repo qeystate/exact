@@ -34,6 +34,7 @@ module Exact
     attribute :EndDate,                   DateTime
     attribute :FixedPriceItem,            String
     attribute :FixedPriceItemDescription, String
+    attribute :HasWBSLines,               Boolean
     attribute :InternalNotes,             String
     attribute :InvoiceAsQuoted,           Boolean
     attribute :ID,                        String

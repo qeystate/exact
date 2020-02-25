@@ -35,6 +35,7 @@ module Exact
     attribute :Status,              Integer
     attribute :TaxOfficeNumber,     String
     attribute :TaxReferenceNumber,  String
+    attribute :TemplateCode,        String
     attribute :VATNumber,           String
     attribute :Website,             String
   end
