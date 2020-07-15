@@ -58,9 +58,9 @@ module Exact
     attribute :Remarks,                              String
     attribute :Salesperson,                          String
     attribute :SalespersonFullName,                  String
-    attribute :SelectionCode,                        Strings
-    attribute :SelectionCodeCode,                    Strings
-    attribute :SelectionCodeDescription,             Strings
+    attribute :SelectionCode,                        String
+    attribute :SelectionCodeCode,                    String
+    attribute :SelectionCodeDescription,             String
     attribute :StarterSalesInvoiceStatus,            String
     attribute :StarterSalesInvoiceStatusDescription, String
     attribute :Status,                               String
