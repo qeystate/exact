@@ -7,7 +7,7 @@ module Exact
     EXACT_GUID    = 'Code'
     OBSOLETE_INSTANCE_VARIABLES = []
 
-    attribute :Code,                Integer
+    attribute :ArchiveDate,         DateTime
     attribute :BlockingStatus,      Integer
     attribute :Class_01,            String
     attribute :Class_02,            String
@@ -21,15 +21,16 @@ module Exact
     attribute :CreatorFullName,     String
     attribute :Currency,            String
     attribute :CurrencyDescription, String
+    attribute :Customer,            String
     attribute :CustomerCode,        String
     attribute :CustomerName,        String
-    attribute :Customer,            String
     attribute :Description,         String
     attribute :HID,                 Integer
     attribute :Main,                Boolean
     attribute :Modified,            DateTime
     attribute :Modifier,            String
     attribute :ModifierFullName,    String
+    attribute :OBNumber,            String
     attribute :SiretNumber,         String
     attribute :StartDate,           DateTime
     attribute :Status,              Integer

@@ -8,6 +8,7 @@ module Exact
     OBSOLETE_INSTANCE_VARIABLES = ['IsSerialNumberItem', 'IsBatchNumberItem']
 
     attribute :AverageCost,             String
+    attribute :Barcode,                 String
     attribute :Class_01,                String
     attribute :Class_02,                String
     attribute :Class_03,                String
@@ -67,9 +68,9 @@ module Exact
     attribute :GLStockCode,             String
     attribute :GLStockDescription,      String
     attribute :GLStock,                 String
+    attribute :GrossWeight,             String
     attribute :ID,                      String
     attribute :IsBatchItem,             String
-    attribute :IsBatchNumberItem,       String
     attribute :IsFractionAllowedItem,   String
     attribute :IsMakeItem,              String
     attribute :IsNewContract,           String
@@ -78,9 +79,9 @@ module Exact
     attribute :IsPurchaseItem,          String
     attribute :IsSalesItem,             String
     attribute :IsSerialItem,            String
-    attribute :IsSerialNumberItem,      String
     attribute :IsStockItem,             String
     attribute :IsSubcontractedItem,     String
+    attribute :IsTaxableItem,           String
     attribute :IsTime,                  String
     attribute :IsWebshopItem,           String
     attribute :ItemGroupCode,           String
@@ -89,23 +90,26 @@ module Exact
     attribute :Modified,                DateTime
     attribute :ModifierFullName,        String
     attribute :Modifier,                String
+    attribute :NetWeight,               String
+    attribute :NetWeightUnit,           String
     attribute :Notes,                   String
+    attribute :PictureName,             String
+    attribute :PictureThumbnailUrl,     String
+    attribute :PictureUrl,              String
     attribute :SalesVatCodeDescription, String
     attribute :SalesVatCode,            String
     attribute :SearchCode,              String
     attribute :SecurityLevel,           String
     attribute :StartDate,               DateTime
+    attribute :StandardSalesPrice,      String
+    attribute :StatisticalCode,         String
+    attribute :StatisticalNetWeight,    String
+    attribute :StatisticalUnits,        String
+    attribute :StatisticalValue,        String
+    attribute :Stock,                   String
     attribute :Unit,                    String
     attribute :UnitDescription,         String
-    attribute :NetWeight,               String
-    attribute :NetWeightUnit,           String
-    attribute :Barcode,                 String
-    attribute :GrossWeight,             String
-    attribute :IsTaxableItem,           String
-    attribute :PictureName,             String
-    attribute :PictureThumbnailUrl,     String
-    attribute :PictureUrl,              String
-    attribute :Stock,                   String
     attribute :UnitType,                String
+
   end
 end

@@ -33,6 +33,9 @@ module Exact
     attribute :DueDate,                              DateTime
     attribute :ExtraDutyAmountFC,                    String
     attribute :GAccountAmountFC,                     String
+    attribute :IncotermAddress,                      String
+    attribute :IncotermCode,                         String
+    attribute :IncotermVersion,                      Integer
     attribute :InvoiceDate,                          DateTime
     attribute :InvoiceID,                            String
     attribute :InvoiceTo,                            String

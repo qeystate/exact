@@ -27,6 +27,11 @@ module Exact
     attribute :SalesInvoiceNumber,              Integer
     attribute :SalesOrderNumber,                Integer
     attribute :SendMethod,                      Integer
+    attribute :Share,                           Integer
+    attribute :SharePointConnectionStatus,      Integer
+    attribute :SharePointID,                    String
+    attribute :Source,                          Integer
+    attribute :SourceDescription,               String
     attribute :Subject,                         String
     attribute :Type,                            Integer
     attribute :TypeDescription,                 String

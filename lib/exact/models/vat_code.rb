@@ -20,6 +20,7 @@ module Exact
     attribute :Description,                   String
     attribute :Division,                      Integer
     attribute :EUSalesListing,                String
+    attribute :ExcludeVATListing,             String
     attribute :GLDiscountPurchase,            String
     attribute :GLDiscountPurchaseCode,        String
     attribute :GLDiscountPurchaseDescription, String
@@ -40,6 +41,7 @@ module Exact
     attribute :Modified,                      DateTime
     attribute :Modifier,                      String
     attribute :ModifierFullName,              String
+    attribute :OssCountry,                    String
     attribute :Percentage,                    String
     attribute :TaxReturnType,                 Integer
     attribute :Type,                          String

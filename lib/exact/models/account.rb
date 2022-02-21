@@ -85,6 +85,12 @@ module Exact
     attribute :HasWithholdingTaxSales,              Boolean
     attribute :ID,                                  String
     attribute :IgnoreDatevWarningMessage,           String
+    attribute :IncotermAddressPurchase              String
+    attribute :IncotermAddressSales                 String
+    attribute :IncotermCodePurchase                 String
+    attribute :IncotermCodeSales                    String
+    attribute :IncotermVersionPurchase              String
+    attribute :IncotermVersionSales                 String
     attribute :IntraStatArea,                       String
     attribute :IntraStatDeliveryTerm,               String
     attribute :IntraStatSystem,                     String
@@ -152,7 +158,6 @@ module Exact
     attribute :SalesVATCodeDescription,             String
     attribute :SearchCode,                          String
     attribute :SecurityLevel,                       String
-    attribute :SeparateInvPerProject,               String
     attribute :SeparateInvPerSubscription,          String
     attribute :ShippingLeadDays,                    String
     attribute :ShippingMethod,                      String
