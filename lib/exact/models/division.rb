@@ -14,6 +14,7 @@ module Exact
     attribute :Class_03,            String
     attribute :Class_04,            String
     attribute :Class_05,            String
+    attribute :Code,                Integer
     attribute :Country,             String
     attribute :CountryDescription,  String
     attribute :Created,             DateTime
