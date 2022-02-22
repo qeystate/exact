@@ -85,12 +85,12 @@ module Exact
     attribute :HasWithholdingTaxSales,              Boolean
     attribute :ID,                                  String
     attribute :IgnoreDatevWarningMessage,           String
-    attribute :IncotermAddressPurchase              String
-    attribute :IncotermAddressSales                 String
-    attribute :IncotermCodePurchase                 String
-    attribute :IncotermCodeSales                    String
-    attribute :IncotermVersionPurchase              String
-    attribute :IncotermVersionSales                 String
+    attribute :IncotermAddressPurchase,             String
+    attribute :IncotermAddressSales,                String
+    attribute :IncotermCodePurchase,                String
+    attribute :IncotermCodeSales,                   String
+    attribute :IncotermVersionPurchase,             String
+    attribute :IncotermVersionSales,                String
     attribute :IntraStatArea,                       String
     attribute :IntraStatDeliveryTerm,               String
     attribute :IntraStatSystem,                     String
