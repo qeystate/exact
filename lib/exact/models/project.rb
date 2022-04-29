@@ -29,6 +29,7 @@ module Exact
     attribute :Creator,                             String
     attribute :CreatorFullName,                     String
     attribute :CustomerPOnumber,                    String
+    attribute :CustomField,                         String
     attribute :Description,                         String
     attribute :Division,                            String
     attribute :DivisionName,                        String

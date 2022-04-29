@@ -16,6 +16,7 @@ module Exact
     attribute :CostUnit,                String
     attribute :CostUnitDescription,     String
     attribute :CustomerItemCode,        String
+    attribute :CustomField,             String
     attribute :DeliveryDate,            DateTime
     attribute :Description,             String
     attribute :Discount,                String
@@ -52,6 +53,7 @@ module Exact
     attribute :UnitCode,                String
     attribute :UnitDescription,         String
     attribute :UnitPrice,               String
+    attribute :ShowRemarkForSales,      String
     attribute :TaxSchedule,             String
     attribute :TaxScheduleCode,         String
     attribute :TaxScheduleDescription,  String

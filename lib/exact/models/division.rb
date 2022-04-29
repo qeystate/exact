@@ -7,6 +7,7 @@ module Exact
     EXACT_GUID    = 'Code'
     OBSOLETE_INSTANCE_VARIABLES = []
 
+    attribute :Code,                Integer
     attribute :ArchiveDate,         DateTime
     attribute :BlockingStatus,      Integer
     attribute :Class_01,            String
@@ -14,7 +15,6 @@ module Exact
     attribute :Class_03,            String
     attribute :Class_04,            String
     attribute :Class_05,            String
-    attribute :Code,                Integer
     attribute :Country,             String
     attribute :CountryDescription,  String
     attribute :Created,             DateTime

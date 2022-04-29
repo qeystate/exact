@@ -27,6 +27,7 @@ module Exact
     attribute :Created,                 DateTime
     attribute :CreatorFullName,         String
     attribute :Creator,                 String
+    attribute :CustomField,             String
     attribute :Description,             String
     attribute :Division,                String
     attribute :EndDate,                 DateTime

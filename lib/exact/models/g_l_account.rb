@@ -20,6 +20,7 @@ module Exact
     attribute :Created,                        DateTime
     attribute :Creator,                        String
     attribute :CreatorFullName,                String
+    attribute :DeductibilityPercentages,       String
     attribute :Description,                    String
     attribute :Division,                       Integer
     attribute :ExcludeVATListing,              String

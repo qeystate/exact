@@ -59,6 +59,9 @@ module Exact
     attribute :PaymentConditionDescription,          String
     attribute :PaymentReference,                     String
     attribute :Remarks,                              String
+    attribute :SalesChannel,                         String
+    attribute :SalesChannelCode,                     String
+    attribute :SalesChannelDescription,              String
     attribute :Salesperson,                          String
     attribute :SalespersonFullName,                  String
     attribute :SelectionCode,                        String
