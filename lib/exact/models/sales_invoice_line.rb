@@ -16,7 +16,6 @@ module Exact
     attribute :CostUnit,                String
     attribute :CostUnitDescription,     String
     attribute :CustomerItemCode,        String
-    attribute :CustomField,             String
     attribute :DeliveryDate,            DateTime
     attribute :Description,             String
     attribute :Discount,                String
