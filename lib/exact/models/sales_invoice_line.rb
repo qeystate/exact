@@ -30,8 +30,8 @@ module Exact
     attribute :ID,                      String
     attribute :InvoiceID,               String
     attribute :Item,                    String
-    attribute :ItemDescription,         String
     attribute :ItemCode,                String
+    attribute :ItemDescription,         String
     attribute :LineNumber,              Integer
     attribute :NetPrice,                String
     attribute :Notes,                   String
@@ -49,13 +49,12 @@ module Exact
     attribute :StartTime,               DateTime
     attribute :Subscription,            String
     attribute :SubscriptionDescription, String
-    attribute :UnitCode,                String
-    attribute :UnitDescription,         String
-    attribute :UnitPrice,               String
-    attribute :ShowRemarkForSales,      String
     attribute :TaxSchedule,             String
     attribute :TaxScheduleCode,         String
     attribute :TaxScheduleDescription,  String
+    attribute :UnitCode,                String
+    attribute :UnitDescription,         String
+    attribute :UnitPrice,               String
     attribute :VATAmountFC,             String
     attribute :VATAmountDC,             String
     attribute :VATCode,                 String
