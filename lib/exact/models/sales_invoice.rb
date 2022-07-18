@@ -67,6 +67,9 @@ module Exact
     attribute :SelectionCode,                        String
     attribute :SelectionCodeCode,                    String
     attribute :SelectionCodeDescription,             String
+    attribute :ShippingMethod                        String
+    attribute :ShippingMethodCode                    String
+    attribute :ShippingMethodDescription             String
     attribute :StarterSalesInvoiceStatus,            String
     attribute :StarterSalesInvoiceStatusDescription, String
     attribute :Status,                               String
