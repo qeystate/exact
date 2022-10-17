@@ -1,11 +1,11 @@
-require 'factory_girl'
+require 'factory_bot'
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :client, class: Exact::Client do
-    access_token "abc123"
-    division     "456"
-    service      "tst"
-    endpoint     "Test"
+    access_token {"abc123"}
+    division     {"456"}
+    service      {"tst"}
+    endpoint     {"Test"}
 
     initialize_with { new(attributes) }
   end

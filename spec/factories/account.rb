@@ -1,6 +1,6 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :account, class: Exact::Account do
-    Name 'test'
+    Name {'test'}
 
     initialize_with { new(attributes) }
   end

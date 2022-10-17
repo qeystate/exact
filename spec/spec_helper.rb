@@ -1,9 +1,9 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'exact'
 require 'vcr'
-require 'factory_girl'
+require 'factory_bot'
 
-FactoryGirl.find_definitions
+FactoryBot.find_definitions
 
 VCR.configure do |c|
   c.hook_into :faraday
@@ -13,5 +13,5 @@ end
 
 RSpec.configure do |config|
   config.before(:suite) { Exact.configure }
-  config.include FactoryGirl::Syntax::Methods
+  config.include FactoryBot::Syntax::Methods
 end

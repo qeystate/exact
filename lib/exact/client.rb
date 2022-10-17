@@ -1,4 +1,4 @@
-require 'ruby_odata'
+require 'odata'
 
 module Exact
   class Client
